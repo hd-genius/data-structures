@@ -6,8 +6,8 @@ cmake_minimum_required(VERSION 3.24.3)
 set(CMAKE_CXX_STANDARD 14)
 
 add_library(data-structures
-    src/data-structures/list.h
-    src/data-structures/list.cpp
+    src/list.h
+    src/list.cpp
 )
 
 set(INSTALL_GTEST OFF)
@@ -17,7 +17,8 @@ enable_testing()
 
 add_executable(
     data-structures-test
-    src/tests/test.cpp
+    src/test.cpp
+    src/list.test.h
 )
 target_link_libraries(
     data-structures-test

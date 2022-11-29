@@ -1,4 +1,6 @@
-﻿#include <gtest/gtest.h>
+#pragma once
+
+#include <gtest/gtest.h>
 #include "list.h"
 #include "list.cpp"
 #include <string> // for string class
@@ -54,9 +56,4 @@ TEST(ListTest, TestPrependValue) {
     string g = "Some text";
     list.prepend(&g);
     ASSERT_EQ(list[0], g);
-}
-
-int main(int argc, char** argv) {
-    ::testing::InitGoogleTest(&argc, argv);
-    return RUN_ALL_TESTS();
 }
