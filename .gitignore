@@ -16,5 +16,9 @@ _deps
 *.vcxproj
 *.sln
 *.vcxproj.filters
+*.vcxproj.user
+*.cmake
+CMakePresets.json
+out/
 x64/
 Debug/
